@@ -1,0 +1,22 @@
+# Site settings.
+locale:    en_CA
+permalink: "/post/:title"
+url:       "https://jmkeyes.github.io"
+title:     "J M Keyes"
+
+# Build settings.
+highlighter: pygments
+markdown: kramdown
+
+# Site owner.
+owner:
+  name:          Joshua M. Keyes
+  avatar:        avatar.jpg
+  email:         mailto:joshua.michael.keyes@gmail.com
+  github:        https://github.com/jmkeyes
+  twitter:       https://twitter.com/jmkeyes
+  linkedin:      https://ca.linkedin.com/in/jmkeyes/
+  stackoverflow: https://stackoverflow.com/users/695546/jmkeyes
+  autobiography: >
+    Are we really afraid of thinking machines, or just the possibility of being reduced to them?
+

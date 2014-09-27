@@ -1,0 +1,154 @@
+/**
+ * Site header
+ */
+.site-header {
+    margin: 75px 0 25px 0;
+
+    .title {
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: -2px;
+        margin-bottom: 0;
+        font-size: 30px;
+        float: left;
+
+        &,
+        &:visited {
+            color: $grey-color-dark;
+        }
+    }
+
+    nav {
+        line-height: 45px;
+        float: right;
+
+        .menu-icon {
+            display: none;
+        }
+
+        .page-link {
+            text-transform: uppercase;
+            text-decoration: none;
+            color: $text-color;
+
+            &:not(:first-child) {
+                margin-left: 20px;
+            }
+        }
+    }
+}
+
+/**
+ * Site content.
+ */
+.site-content {
+    padding: $spacing-unit 0;
+}
+
+/**
+ * Site hero
+ */
+.site-hero {
+    box-shadow: inset 0 0 15px rgba(0,0,0,.5);
+    background-size: cover;
+}
+
+
+    
+/**
+ * Site footer
+ */
+.site-footer {
+    padding: 25px;
+
+    .metadata {
+        float: right;
+
+        .block {
+            display: inline-block;
+            margin-top: 10px;
+            padding-right: 10px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    }
+}
+
+/**
+ * Page content
+ */
+.page-content {
+    padding: $spacing-unit 0;
+}
+
+.page-heading {
+    font-size: 20px;
+}
+
+.listing {
+    margin: 25px 0;
+    list-style: none;
+
+    > li {
+        margin-bottom: 10px;
+        list-style-type: none;
+        font-size: $base-font-size;
+        padding: 7px 5px;
+
+        a {
+            text-decoration: none;
+        }
+
+        span {
+            float: right;
+            padding-top: 2px;
+            line-height: 20px;
+            font-size: $small-font-size;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.post-meta {
+    font-size: $small-font-size;
+    color: $grey-color;
+}
+
+.post-link {
+    display: block;
+    font-size: 18px;
+}
+
+
+
+/**
+ * Posts
+ */
+.post-header {
+    margin-bottom: $spacing-unit;
+}
+
+.post-title {
+    padding-top: $spacing-unit;
+    font-size: 42px;
+    letter-spacing: -1px;
+    line-height: 1;
+}
+
+.post-content {
+    margin-bottom: $spacing-unit;
+
+    h2 {
+        font-size: 32px;
+    }
+
+    h3 {
+        font-size: 26px;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+}

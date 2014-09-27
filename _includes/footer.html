@@ -1,0 +1,22 @@
+{% if page.image %}
+<footer class="site-footer site-hero" style="background-image: url('/images/hero/{{ page.image }}');">
+{% else %}
+<footer class="site-footer">
+{% endif %}
+    <div class="container">
+        &nbsp;
+        {% if false %}
+            {% if site.twitter_username %}
+            <a href="https://twitter.com/{{ site.twitter_username }}">Follow @{{ site.twitter_username }} on Twitter</a>
+            {% endif %}
+            <section class="metadata">
+                {% if site.github_username %}
+                <a class="block" href="https://github.com/{{ site.github_username }}">GITHUB-ICON</a>
+                {% endif %}
+                {% if site.email %}
+                <a class="block" href="mailto:{{ site.email }}">EMAIL-ICON</a>
+                {% endif %}
+            </section>
+        {% endif %}
+    </div>
+</footer>
