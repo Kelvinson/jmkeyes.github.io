@@ -10,8 +10,8 @@ deployable VM templates. It's lean and very flexible. However,
 I'd also like to create plugins for it, which means diving into
 a language I've never touched before -- Golang.
 
-After enabling the Debian "Testing" [repository][debian-testing],
-installing it was fairly easy:
+After enabling the Debian "Testing" repository installing it
+was fairly easy:
 
 {% highlight bash %}
 $ apt-get install golang/testing
@@ -48,5 +48,4 @@ govc version 0.0.1-dev
 Now it's time to create a better `ovftool` post-processor.
 
   [packer-io]:      http://packer.io/
-  [debian-testing]: {% post_url 2013-11-28-running-docker-on-debian %}
 
