@@ -87,23 +87,23 @@ know how to run the 64-bit executable.
 Thankfully, we can solve this problem by building our own base image instead:
 
 {% highlight text %}
-$ sudo debootstrap wheezy /tmp/wheezy_base32_rootfs/
-$ cat > /tmp/wheezy_base32_rootfs/etc/apt/sources.list
+$ sudo debootstrap wheezy /tmp/rootfs/
+$ cat > /tmp/rootfs/etc/apt/sources.list
 deb http://ftp.us.debian.org/debian stable main
 deb http://security.debian.org/ stable/updates main
 deb http://ftp.us.debian.org/debian/ stable-updates main
 ^D
-$ sudo tar -czf /tmp/wheezy_base32_rootfs.tgz -C /tmp/wheezy_base32_rootfs/ .
-$ cat /tmp/wheezy_base32_rootfs.tgz | docker import - base32
+$ sudo tar -czf /tmp/rootfs.tgz -C /tmp/rootfs/ .
+$ cat /tmp/rootfs.tgz | docker import - debian32
 {% endhighlight %}
 
-Now we have our own 32-bit base image and Docker can use it:
+Now we have our own 32-bit Debian image and Docker can use it:
 
 {% highlight text %}
 $ docker images
 REPOSITORY      TAG     IMAGE ID        CREATED         VIRTUAL SIZE
-base32          latest  65b5e2e55c7f    31 seconds ago  223.5 MB
-$ docker run -i -t base32 /bin/bash
+debian32        latest  65b5e2e55c7f    31 seconds ago  223.5 MB
+$ docker run -i -t debian32 /bin/bash
 root@460accd6fab3:/#
 {% endhighlight %}
 
